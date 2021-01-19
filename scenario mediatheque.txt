@@ -1,0 +1,51 @@
+scénario
+
+
+1) l'usager choisit un livre
+2) il présente sa carte a l'employé 
+3) l'employé consulte le systeme pour verifier le nombre d'emprunt et la cotisation de l'usager
+4) le systeme renvoie les infos
+5) l'employé valide l'emprunt
+6)le systeme  genere une fiche de pret et date l'emprunt
+
+
+alternatif
+2) l'usager n'as pas sa carte
+
+
+alternatif 
+
+1) l'usager choisit un cd rom 
+2) il présente sa carte a l'employé 
+3) l'employé consulte le systeme pour verifier le nombre d'emprunt et la cotisation de l'usager
+4) le systeme renvoie les infos
+5) l'employé demande la caution
+6) l'usager donne la caution
+7) l'employé valide l'emprunt
+8)le systeme  genere une fiche de pret et date l'emprunt
+
+alternatif 
+1) l'usager choisit un cd rom 
+2) il présente sa carte a l'employé 
+3) l'employé consulte le systeme pour verifier le nombre d'emprunt et la cotisation de l'usager
+4) le systeme renvoie les infos
+5) l'employé demande la caution
+6) l'usager refuse
+
+alternatif
+1) l'usager ne choisit pas de document
+
+
+alternatif
+5) l'employé ne valide pas l'emprunt par manque de cotisation
+6) l'usager paye
+7) l'employé modifie la fiche usager puis valide l'emprunt
+8)le systeme  genere une fiche de pret et date l'emprunt
+
+alternatif 
+5) l'employé ne valide pas l'emprunt par manque de cotisation
+6) l'usager ne paye pas
+
+alternatif 
+
+5) l'employé ne valide pas l'emprunt car l'usager possede deja 5 emprunt actif
