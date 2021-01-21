@@ -2,9 +2,9 @@ scénario
 
 
 1) l'usager choisit un livre
-2) il présente sa carte a l'employé 
+2) il présente sa carte à l'employé 
 3) l'employé consulte le systeme pour verifier le nombre d'emprunt et la cotisation de l'usager
-4) le systeme renvoie les infos
+4) le systeme renvoi les infos
 5) l'employé valide l'emprunt
 6)le systeme  genere une fiche de pret et date l'emprunt
 
@@ -16,7 +16,7 @@ alternatif
 alternatif 
 
 1) l'usager choisit un cd rom 
-2) il présente sa carte a l'employé 
+2) il présente sa carte à l'employé 
 3) l'employé consulte le systeme pour verifier le nombre d'emprunt et la cotisation de l'usager
 4) le systeme renvoie les infos
 5) l'employé demande la caution
@@ -26,7 +26,7 @@ alternatif
 
 alternatif 
 1) l'usager choisit un cd rom 
-2) il présente sa carte a l'employé 
+2) il présente sa carte à l'employé 
 3) l'employé consulte le systeme pour verifier le nombre d'emprunt et la cotisation de l'usager
 4) le systeme renvoie les infos
 5) l'employé demande la caution
