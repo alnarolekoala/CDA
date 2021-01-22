@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Database>
+   <Name>le cas niche</Name>
+   <Table>
+      <Name>prop</Name>
+      <Column>
+         <Name>pro_name</Name>
+         <Type>VARCHAR(30)</Type>
+      </Column>
+      <Column>
+         <Name>pro_adress</Name>
+         <Type>VARCHAR(100)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <PK>
+         <Key>pro_name</Key>
+      </PK>
+   </Table>
+   <Table>
+      <Name>concours</Name>
+      <Column>
+         <Name>conc_ville</Name>
+         <Type>VARCHAR(30)</Type>
+      </Column>
+      <Column>
+         <Name>conc_date</Name>
+         <Type>DATE</Type>
+      </Column>
+      <Column>
+         <Name>conc_type</Name>
+         <Type>VARCHAR(30)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>conc_result</Name>
+         <Type>DECIMAL(2,0)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <PK>
+         <Key>conc_ville, conc_date</Key>
+      </PK>
+   </Table>
+   <Table>
+      <Name>chien</Name>
+      <Column>
+         <Name>dog_id</Name>
+         <Type>DECIMAL(6,0)</Type>
+      </Column>
+      <Column>
+         <Name>dog_name</Name>
+         <Type>VARCHAR(20)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>race</Name>
+         <Type>VARCHAR(20)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>sexe</Name>
+         <Type>CHAR(1)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>dog_date_buy</Name>
+         <Type>DATE</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>dog_death</Name>
+         <Type>DATE</Type>
+      </Column>
+      <Column>
+         <Name>dog_born</Name>
+         <Type>DATE</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>conc_ville</Name>
+         <Type>VARCHAR(30)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>conc_date</Name>
+         <Type>DATE</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>pro_name</Name>
+         <Type>VARCHAR(30)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <PK>
+         <Key>dog_id</Key>
+      </PK>
+      <FK>
+         <Key>conc_ville, conc_date</Key>
+         <Reference>concours(conc_ville, conc_date)</Reference>
+      </FK>
+      <FK>
+         <Key>pro_name</Key>
+         <Reference>prop(pro_name)</Reference>
+      </FK>
+   </Table>
+</Database>

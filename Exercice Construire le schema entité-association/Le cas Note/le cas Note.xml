@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Database>
+   <Name>le cas Note</Name>
+   <Table>
+      <Name>subject</Name>
+      <Column>
+         <Name>subject_name</Name>
+         <Type>VARCHAR(30)</Type>
+      </Column>
+      <PK>
+         <Key>subject_name</Key>
+      </PK>
+   </Table>
+   <Table>
+      <Name>prof</Name>
+      <Column>
+         <Name>nomprof</Name>
+         <Type>VARCHAR(30)</Type>
+      </Column>
+      <Column>
+         <Name>subject_name</Name>
+         <Type>VARCHAR(30)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <PK>
+         <Key>nomprof</Key>
+      </PK>
+      <FK>
+         <Key>subject_name</Key>
+         <Reference>subject(subject_name)</Reference>
+      </FK>
+   </Table>
+   <Table>
+      <Name>salle</Name>
+      <Column>
+         <Name>num_salle</Name>
+         <Type>DECIMAL(2,0)</Type>
+      </Column>
+      <PK>
+         <Key>num_salle</Key>
+      </PK>
+   </Table>
+   <Table>
+      <Name>classe</Name>
+      <Column>
+         <Name>class_name</Name>
+         <Type>VARCHAR(30)</Type>
+      </Column>
+      <Column>
+         <Name>num_salle</Name>
+         <Type>DECIMAL(2,0)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <PK>
+         <Key>class_name</Key>
+      </PK>
+      <AK>
+         <Key>num_salle</Key>
+      </AK>
+      <FK>
+         <Key>num_salle</Key>
+         <Reference>salle(num_salle)</Reference>
+      </FK>
+   </Table>
+   <Table>
+      <Name>note</Name>
+      <Column>
+         <Name>note</Name>
+         <Type>DECIMAL(2,2)</Type>
+      </Column>
+      <Column>
+         <Name>nomprof</Name>
+         <Type>VARCHAR(30)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <PK>
+         <Key>note</Key>
+      </PK>
+      <FK>
+         <Key>nomprof</Key>
+         <Reference>prof(nomprof)</Reference>
+      </FK>
+   </Table>
+   <Table>
+      <Name>eleve</Name>
+      <Column>
+         <Name>nomeleve</Name>
+         <Type>VARCHAR(30)</Type>
+      </Column>
+      <Column>
+         <Name>prenom</Name>
+         <Type>VARCHAR(30)</Type>
+      </Column>
+      <Column>
+         <Name>note</Name>
+         <Type>DECIMAL(2,2)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>class_name</Name>
+         <Type>VARCHAR(30)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <PK>
+         <Key>nomeleve, prenom</Key>
+      </PK>
+      <FK>
+         <Key>note</Key>
+         <Reference>note(note)</Reference>
+      </FK>
+      <FK>
+         <Key>class_name</Key>
+         <Reference>classe(class_name)</Reference>
+      </FK>
+   </Table>
+   <Table>
+      <Name>possede</Name>
+      <Column>
+         <Name>subject_name</Name>
+         <Type>VARCHAR(30)</Type>
+      </Column>
+      <Column>
+         <Name>class_name</Name>
+         <Type>VARCHAR(30)</Type>
+      </Column>
+      <Column>
+         <Name>nbr_heure</Name>
+         <Type>DECIMAL(2,0)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <PK>
+         <Key>subject_name, class_name</Key>
+      </PK>
+      <FK>
+         <Key>subject_name</Key>
+         <Reference>subject(subject_name)</Reference>
+      </FK>
+      <FK>
+         <Key>class_name</Key>
+         <Reference>classe(class_name)</Reference>
+      </FK>
+   </Table>
+</Database>
