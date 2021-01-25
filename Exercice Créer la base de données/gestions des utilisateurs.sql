@@ -1,0 +1,15 @@
+DROP USER IF EXISTS 'util1'@'%';
+CREATE USER 'util1'@'%' IDENTIFIED BY 'mdpUtil1';
+GRANT ALL PRIVILEGES
+ON *
+TO util1;
+DROP USER IF EXISTS 'util2'@'%';
+CREATE USER 'util2'@'%' IDENTIFIED BY 'mdpUtil2';
+GRANT SELECT
+ON *
+TO util2;
+DROP USER IF EXISTS 'util3'@'%';
+CREATE USER 'util3'@'%' IDENTIFIED BY 'mdpUtil3';
+GRANT SELECT
+ON fournis
+TO util3;
