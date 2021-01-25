@@ -1,0 +1,22 @@
+2. Pour chaque association, expliquez la transformation du MCD en MPD : 
+
+
+- Association "Passe"  : relation de type 1:n  la clef primaire de "Client" devient clef étrangère dans "Commande"
+
+
+- Association "SeComposeDe" : relation de type n:m création d'une table de jointure "SeComposeDe" qui prend pour clef primaire : la clef primaire de "Commande" et celle de "Article"
+
+
+
+
+3. Pour chaque table, expliquez (en justifiant) les champs qui servent de clés (primaires ou étrangères) : 
+
+
+- Table "Client" : "N°Client" sert de clef primaire, il sert a authentifier un client de manière unique.
+
+
+- Table "Commande" : "N°Commande" sert de clef primaire, il sert a authentifier une commande de manière unique, "N°Client" sert de clef étrangère qui permet de lié un client à une commande
+
+- Table "SeComposeDe" : "N°Commande" et "N°Article" sont la clef primaire ensemble, "N°Commande" sert de clef étrangère qui permet de lié une commande sa composition, "N°Article" sert de clef étrangère qui permet de lié les article a la composition d'une commande
+
+-Table "Article" : "Article" sert de clef primaire, il sert a authentifier un article de manière unique.
