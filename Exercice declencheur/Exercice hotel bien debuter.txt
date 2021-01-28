@@ -1,0 +1,126 @@
+ALTER TABLE chambre ENGINE=InnoDB;
+ALTER TABLE client ENGINE=InnoDB;
+ALTER TABLE hotel ENGINE=InnoDB;
+ALTER TABLE reservation ENGINE=InnoDB;
+ALTER TABLE station ENGINE=InnoDB;
+
+
+
+DELIMITER |
+
+CREATE TRIGGER modif_reservation BEFORE UPDATE
+ON reservation FOR EACH ROW
+BEGIN
+    IF old.res_id <> new.res_id THEN
+SIGNAL SQLSTATE '40000' SET MESSAGE_TEXT = 'impossible de modifier une réservation';
+END IF;
+   IF old.res_cha_id <> new.res_cha_id THEN
+SIGNAL SQLSTATE '40000' SET MESSAGE_TEXT = 'impossible de modifier une réservation';
+END IF;
+   IF old.res_cli_id <> new.res_cli_id THEN
+SIGNAL SQLSTATE '40000' SET MESSAGE_TEXT = 'impossible de modifier une réservation';
+END IF;
+   IF old.res_date <> new.res_date THEN
+SIGNAL SQLSTATE '40000' SET MESSAGE_TEXT = 'impossible de modifier une réservation';
+END IF;
+   IF old.res_date_debut <> new.res_date_debut THEN
+SIGNAL SQLSTATE '40000' SET MESSAGE_TEXT = 'impossible de modifier une réservation';
+END IF;
+   IF old.res_date_fin <> new.res_date_fin THEN
+SIGNAL SQLSTATE '40000' SET MESSAGE_TEXT = 'impossible de modifier une réservation';
+END IF;
+   IF old.res_prix <> new.res_prix THEN
+SIGNAL SQLSTATE '40000' SET MESSAGE_TEXT = 'impossible de modifier une réservation';
+END IF;
+   IF old.res_arrhes <> new.res_arrhes THEN
+SIGNAL SQLSTATE '40000' SET MESSAGE_TEXT = 'impossible de modifier une réservation';
+END IF;
+END |
+DELIMITER ;
+
+
+
+
+DELIMITER | 
+
+CREATE TRIGGER insert_reservation AFTER INSERT 
+ON reservation FOR EACH ROW
+BEGIN
+DECLARE nombre INT;
+DECLARE nomHotel varchar(25);
+
+select `nom de l'hotel` into nomHotel
+from v_res_cha_hot
+WHERE `numero de reservation` = (SELECT MAX(`numero de reservation`) FROM v_res_cha_hot);
+
+SELECT COUNT(`nom de l'hotel`) into nombre
+from v_res_cha_hot
+WHERE `nom de l'hotel` = `nomHotel`
+GROUP BY `nom de l'hotel`;
+
+IF nombre > 10 THEN
+SIGNAL SQLSTATE '40020' SET MESSAGE_TEXT = 'Nombre de réservation max atteinte';
+
+END IF;
+END |
+
+DELIMITER ;
+
+
+
+
+DELIMITER | 
+
+CREATE TRIGGER insert_reservation2 AFTER INSERT 
+ON reservation FOR EACH ROW
+BEGIN
+DECLARE nombre INT;
+DECLARE clientID varchar(25);
+
+select res_cli_id INTO clientID
+from reservation
+WHERE res_id = (SELECT MAX(res_id) FROM reservation);
+
+
+SELECT COUNT(res_cli_id) into nombre
+from reservation
+WHERE res_cli_id = clientID
+GROUP BY res_cli_id;
+
+IF nombre > 3 THEN
+SIGNAL SQLSTATE '40030' SET MESSAGE_TEXT = 'Nombre de réservation max atteinte pour ce client ';
+
+END IF;
+END |
+
+DELIMITER ;
+
+
+
+
+
+
+DELIMITER | 
+
+CREATE TRIGGER insert_chambre AFTER INSERT 
+ON chambre FOR EACH ROW
+BEGIN
+DECLARE nombre INT;
+DECLARE numHotel INT;
+
+SET numHotel = new.cha_hot_id;
+
+
+
+SELECT SUM(cha_capacite) into nombre
+from chambre
+WHERE cha_hot_id = numHotel
+GROUP BY cha_hot_id;
+
+IF nombre > 50 THEN
+SIGNAL SQLSTATE '40050' SET MESSAGE_TEXT = 'Nombre de chambre max atteinte pour cet hotel ';
+
+END IF;
+END |
+
+DELIMITER ;

@@ -1,0 +1,23 @@
+Que concluez-vous ?
+
+La transaction n'est pas terminée.
+
+
+Les données sont-elles modifiables par d'autres utilisateurs (ouvrez une nouvelle fenêtre de requête pour interroger le fournisseur 120 par une instruction SELECT) ?
+
+Non.
+
+
+La transaction est-elle terminée ?
+
+Non.
+
+
+Comment rendre la modification permanente ?
+
+COMMIT;
+
+
+Comment annuler la transaction ?
+
+ROLLBACK;
