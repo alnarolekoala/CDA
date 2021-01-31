@@ -1,0 +1,161 @@
+/* ____________________________________________________________________992 px  */
+@media screen and (max-width: 992px) {
+    #lol, #aside {    
+        font-size: 12px;        
+    }
+    #monadresse {    
+        text-align: justify ;
+    }
+    .container-fluid > #aside > img { 
+        display: none;
+    }
+    .container-fluid {
+        margin-top: 11%;
+    }
+    #aside {   
+        line-height: 25px;
+        padding-bottom: 0;                
+        margin-top: 9%;        
+        margin-bottom: 5%;
+        padding-bottom: 0;
+    }    
+}
+/*____________________________________________________________________1300 px */  
+@media screen and (max-width: 1300px) {
+    header > #navbartop > #navtop > #navbarText {
+        margin-left: 35%;
+        z-index: 500;  
+    }
+    #aside > img {
+        margin-top: 3%;
+    }
+    #aside {
+        padding-top: 1%;
+        line-height: 30px;
+        margin-top: 8%;
+        margin-bottom: 11%;
+    }
+    @keyframes cadre {
+        0% {margin-top: -35px;}
+        40%{margin-top: -35px;}
+        100% {margin-top: -35px;} 
+    }
+    .container-fluid {
+        margin-top: 5%;
+        height: 80%;
+    }
+} 
+/*____________________________________________________________________1124 px */  
+@media screen and (max-width: 1124px) {
+    header > #navbartop > #navtop > #navbarText {
+        margin-left: 25%;
+        z-index: 500;
+    }
+    #aside > p {
+        margin-top: 7%;
+        font-size: 18px;
+    }
+    #lol, #aside {    
+        font-size: 14px;
+        padding-bottom: 47px;
+    }
+    @keyframes cadre {
+        0% {margin-top: 0px;}
+        40%{margin-top: 0px;}      
+        100% {margin-top: 0px;}       
+    }
+    #aside {
+        line-height: 22px;
+        margin-top: 5%;
+        padding-bottom: 0;
+        margin-bottom: 11%;
+    }
+    .container-fluid {
+        margin-top: 12%;
+        height: 90%;
+    }
+}
+/*____________________________________________________________________650 px */  
+@media screen and (max-width: 650px) {
+   
+    footer > #navbas> #navbot {
+        color: white;
+        margin-left: 30%;
+        font-weight: 600;
+    }
+    .container-fluid > #aside > img { 
+        display: none;
+    }
+    #aside {   
+        line-height: 20px;
+        margin-top: 9%;
+        margin-bottom: 5%;
+        padding-bottom: 0;
+    }
+    .container-fluid {
+        margin-top: 15%;
+    }
+    #lol, #aside {    
+        font-size: 10px; 
+        padding-bottom: 50px;
+    }
+    #aside > p {
+        font-size: 18px;
+    }
+}
+ /*____________________________________________________________________576 px */  
+@media screen and (max-width: 576px) {
+ 
+    footer > #navbas> #navbot {
+        color: white;
+        margin-left: 30%;
+        font-weight: 600;
+    }
+    #lol, #aside {    
+        font-size: 10px; 
+        padding-bottom: 50px;
+        }
+        .container-fluid > #aside > img { 
+            display: none; 
+        }
+        #aside {
+            line-height: 19px;
+            font-size: 50%;
+            margin-top: 10%;
+            height: auto;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .container-fluid {
+            margin-top: 15%;
+        }
+    }
+/*____________________________________________________________________768 px */  
+@media screen and (max-width: 768px) {
+  
+        @keyframes defilement {
+            0% {margin-left: -40%;}
+            50%{margin-left: -20%;}
+            100% {margin-left: -40%;} 
+        }
+        footer > #navbas> #navbot {
+            color: white;
+            margin-left: 30%;
+            font-weight: 600;
+        }
+        #lol, #aside {    
+            font-size: 15px; 
+            padding-bottom: 50px;
+        }
+        .container-fluid > #aside > img { 
+            display: none;
+        }
+        #aside {
+            line-height: 18px;
+            margin-top: 10%;     
+        }
+        .container-fluid {
+            margin-top: 13%;
+        }
+} 
+

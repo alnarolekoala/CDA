@@ -1,0 +1,154 @@
+body {
+    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+}
+
+/* animation cadre qualité */
+.container-fluid > #aside > img {
+    box-shadow: 3px 3px 15px#814015;
+    animation-name: cadre; 
+animation-duration: 3s; /* temps de l'animation  */
+animation-iteration-count: infinite; /* nombre de boucles  */
+animation-timing-function: ease; 
+        
+    
+	transition: 1s ease;
+        
+}
+@keyframes cadre {
+    0% {margin-top: 0px;}
+    40%{margin-top: -35px;}
+  
+    100% {margin-top: 0px;} 
+    
+   
+}
+
+
+
+
+.colonne {
+	margin: 15px 25px 0 25px;
+	padding: 0;
+}
+.colonne:last-child {
+	padding-bottom: 60px;
+}
+.colonne::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.colonne div {
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 150px;
+	margin: 0 0 0 35px;
+    padding: 0;
+    
+}
+.colonne div:first-child {
+	margin-left: 0;
+}
+
+
+
+
+
+#cadre {
+    margin-top: 5%;
+    color: black;
+    
+}
+#aside {
+    line-height: 50px;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 5%;
+    color: black;
+    margin-left: 5%;
+    background-color: blanchedalmond;
+    border-radius: 5%;
+    margin-bottom: 5%;
+    box-shadow: 3px 3px 15px black;
+}
+
+.monnom{
+    margin-left: 15%;
+    vertical-align: -70%;
+    
+}
+#ville {
+    margin-left: 30%;
+    vertical-align: -20%;
+    
+}
+.monadresse{
+    margin-left: 15%;
+    vertical-align: -20%;
+    /* font-size: 15px; */
+    
+   
+}
+
+
+.monmail{
+    
+    vertical-align: -20%;
+    font-size: 90%;
+    
+}
+.monanniv {
+    margin-left: 15%;
+    vertical-align: -20%;
+    
+}
+
+#logoprofil {
+    margin-top: 10%;
+    margin-bottom: 0%;
+    
+}
+hr {
+    height: 2px; 
+    color: #839D2D; 
+    background-color: #839D2D; 
+    width: 90%; 
+    border: none;
+}
+
+
+#lol {
+    position: absolute;
+    z-index: 100;
+}
+#lol > #aside > #liste {
+    float: right;
+   
+
+    
+}
+
+
+#encadre {
+    background-color: blanchedalmond;
+    border-radius: 2%;
+    box-shadow: 3px 3px 15px black;
+}
+
+.container-fluid {
+    margin-top: 5%;
+}
+#lol, #aside {    
+    font-size: 14px; 
+    
+    }
+
+
+
+
+
+
+
+
+

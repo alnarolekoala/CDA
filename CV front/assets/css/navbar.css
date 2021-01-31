@@ -1,0 +1,83 @@
+
+
+html {
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+footer > #navbas> #navbot {
+    color: white;
+    margin-left: 80%;
+    font-weight: 600;
+}
+
+footer > #navbas {
+    background-color: rgb(20, 20, 20);
+    height: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+header > #navbartop > #navtop > #navbarText {
+    margin-left: 45%;
+    z-index: 500;
+   
+}
+
+header {
+    position: absolute;
+    top: 0%; left: 0%;
+    width: 100%;
+    height: 50%;
+   
+   
+}
+header > #navbartop > #navtop {
+    position: relative;
+    width: 100%;
+    height: 1%;
+    color: black;
+    z-index: 500;
+}
+
+header > #navbartop > nav > #nom {
+    color: white;
+    font-size: large;
+    margin-left: 4em;
+    z-index: 500;
+}
+
+
+
+
+
+
+
+header > nav > #nom {
+    color: white;
+    font-size: large;
+    margin-left: 4em;
+    z-index: 500;
+   
+}
+
+
+header > nav > #navbarText {
+    margin-left: 40%;
+    z-index: 500;
+}
+
+header > #navbartop >  #navtop {
+    background-color: black!important;
+    z-index: 500;
+}

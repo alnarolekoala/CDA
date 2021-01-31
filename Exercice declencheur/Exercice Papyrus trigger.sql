@@ -23,32 +23,35 @@ DECLARE `code` CHAR(4);
 SET `code` = NEW.CODART;
 SET `stock_phy` = NEW.STKPHY;
 
-SELECT COUNT(*) INTO `verif`
+SET `verif` = (SELECT COUNT(*) 
 FROM articles_a_commander 
-WHERE CODART = `code`;
+WHERE CODART = `code`);
 
-SELECT STKALE INTO `stock_alerte`
+SET `stock_alerte` = (SELECT STKALE
 from produit
 where CODART = `code`
-GROUP BY `code`;
+GROUP BY `code`);
 
-SELECT `stock_phy` INTO `stock_physique`
+SET `stock_physique` = (SELECT `stock_phy` 
 from produit
 where CODART = `code`
-GROUP BY `code`;
+GROUP BY `code`);
 
-SELECT QTE into `already_done`
+
+
+
+IF `verif` < 1 THEN
+SET `already_done` = 0; 
+ELSE 
+SET `already_done` = (SELECT QTE
 from articles_a_commander
 where CODART = `code`
-GROUP BY `code`;
-
-IF `already_done` = NULL THEN
-SET `already_done` = 0; 
+GROUP BY `code`);
 END IF;
 
 
 IF `stock_physique` <= `stock_alerte` THEN
-SELECT sum(`stock_alerte` - `stock_physique` - `already_done`) INTO `nombre_command`;
+SET `nombre_command` = (SELECT sum(`stock_alerte` - `stock_physique`  -  `already_done`));
 
 IF `verif` < 1 THEN
 
