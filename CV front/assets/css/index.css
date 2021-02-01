@@ -144,11 +144,49 @@ hr {
     
     }
 
+#frame {
+    position: absolute;
+    z-index: 5000;
+    top: 35%;  left: 25%; 
+    height: 250px;
+    width: 330px;
+    background-color: white;
+   
+} 
+
+#sendmail {
+   
+    color: white;
+    border:  2px solid red;
+    box-shadow: 1px 1px 10px red;
+    padding-left: 1%;
+    background-image: linear-gradient(to top, #86377b 20%, #46468a 80%);
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+
+.cache {
+    display: none;
+}
+ 
+#iframe {
+  
+    height: 300px;
+    width: 330px;
+    background-color: white;
+    border: 2px solid black;
+}
 
 
 
-
-
-
+.redcrossbutton {
+    position: absolute;
+    top: 0%; right: 0%;
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+}
 
 

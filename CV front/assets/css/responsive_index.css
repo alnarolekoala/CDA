@@ -1,5 +1,5 @@
 /* ____________________________________________________________________992 px  */
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 769px ) and (max-width: 992px) {
     #lol, #aside {    
         font-size: 12px;        
     }
@@ -21,7 +21,7 @@
     }    
 }
 /*____________________________________________________________________1300 px */  
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 1125px ) and (max-width: 1300px) {
     header > #navbartop > #navtop > #navbarText {
         margin-left: 35%;
         z-index: 500;  
@@ -46,7 +46,7 @@
     }
 } 
 /*____________________________________________________________________1124 px */  
-@media screen and (max-width: 1124px) {
+@media screen and (min-width: 993px ) and (max-width: 1124px) {
     header > #navbartop > #navtop > #navbarText {
         margin-left: 25%;
         z-index: 500;
@@ -76,7 +76,7 @@
     }
 }
 /*____________________________________________________________________650 px */  
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 577px) and (max-width: 650px) { 
    
     footer > #navbas> #navbot {
         color: white;
@@ -87,10 +87,12 @@
         display: none;
     }
     #aside {   
-        line-height: 20px;
-        margin-top: 9%;
-        margin-bottom: 5%;
-        padding-bottom: 0;
+        line-height: 19px;
+            font-size: 50%;
+            margin-top: 10%;
+            height: auto;
+            padding-bottom: 0;
+            margin-bottom: 0;
     }
     .container-fluid {
         margin-top: 15%;
@@ -131,7 +133,7 @@
         }
     }
 /*____________________________________________________________________768 px */  
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 651px ) and (max-width: 768px) {
   
         @keyframes defilement {
             0% {margin-left: -40%;}

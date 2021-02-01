@@ -1,0 +1,35 @@
+div {
+    margin-top: 5%;
+}
+
+
+html {
+    height: 295px;
+    width: 320px;
+    background-image: linear-gradient(to top, #cfcacf 20%, #484849 80%);
+}
+#submitbutton {
+    margin-top: 6%;
+    margin-left: 40%;
+}
+
+
+#erreur3 {
+    margin-left: 22%;
+    margin-top: 0%;
+    color: red;
+    font-style:oblique;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#erreur, #erreur2 {
+    margin-left: 32%;
+    margin-top: 0%;
+    color: red;
+    font-style:oblique;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+

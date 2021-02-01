@@ -7,8 +7,9 @@ html {
 }
 
 footer > #navbas> #navbot {
+    position: absolute;
     color: white;
-    margin-left: 80%;
+    top: 50%; right: 5%;
     font-weight: 600;
 }
 
