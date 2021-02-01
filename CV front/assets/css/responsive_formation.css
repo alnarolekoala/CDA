@@ -1,43 +1,425 @@
-/*____________________________________________________________________992 px */  
-@media screen and (max-width: 992px) {
 
-        
-}
-/*____________________________________________________________________1300 px */  
-@media screen and (max-width: 1300px) {
-  
- 
-
-
-} 
-/*____________________________________________________________________1124 px */  
-@media screen and (max-width: 1124px) {
-  
-
-
- 
-
-}
-/*____________________________________________________________________650 px */  
-@media screen and (max-width: 650px) {
-   
-
-}
 
  /*____________________________________________________________________576 px */  
 @media screen and (max-width: 576px) {
- 
+    #start {
+        position: absolute;
+        left: 7%;
+        
+    }
+    #titre, #titre2 {
+        font-size: 25px;
+        
+    }
+    #experience, #experience2 {
+        height: 60%;
+        width: 80%;
+        position: absolute;
+        top: 10%;
+        line-height: 10px;
+       
+    }
+    #content {
+        margin-top: 15%;
+       
+    }
+    #formation, #formation2 {
+        position: absolute;
+        top: 75%; left: 9%;
+        border-radius: 0%;
+        height: 20%;
+        font-size: 10px;
+    }
+    #formation_decal, #titre_decal, #lieu_decal, #annee_decal, #formation_decal2, #titre_decal2, #lieu_decal2, #annee_decal2 {
+        font-size: 14px;
+       position:absolute;
+       left: 0; 
+        
+    }
+    #contenu_lieu, #contenu_titre, #contenu_annee, #contenu_lieu2, #contenu_titre2, #contenu_annee2 {
+        position: absolute;
+        left: 0;
+    }
+    #annee_decal, #annee_decal2 {
+        position: absolute;
+        top: 70%;
+    }
+    #suivant, #suivant2 {
+        position: absolute;
+        top: 88%; left: 84%;
+        width: 25%;
+    }
+    p {
+        font-size: 10px;
+        text-align: start;
+    }
+    .annee_p {
+        font-size: 12px;
+        
+    }
+}
+/*____________________________________________________________________650 px */  
+@media screen and (min-width: 577px) and (max-width: 650px) {
+    #start {
+        position: absolute;
+        left: 12%;
+        
+    }
+    #titre, #titre2 {
+        font-size: 25px;
+        
+    }
+    #experience, #experience2 {
+        height: 60%;
+        width: 80%;
+        position: absolute;
+        top: 10%;
+        line-height: 10px;
+       
+    }
+    #content {
+        margin-top: 13%;
+       
+    }
+    #formation, #formation2 {
+        position: absolute;
+        top: 75%; left: 9%;
+        border-radius: 0%;
+        height: 20%;
+        font-size: 10px;
+    }
+    #formation_decal, #titre_decal, #lieu_decal, #annee_decal, #formation_decal2, #titre_decal2, #lieu_decal2, #annee_decal2 {
+        font-size: 14px;
+       position:absolute;
+       left: 0; 
+        
+    }
+    #contenu_lieu, #contenu_titre, #contenu_annee, #contenu_lieu2, #contenu_titre2, #contenu_annee2 {
+        position: absolute;
+        left: 0;
+    }
+    #annee_decal, #annee_decal2 {
+        position: absolute;
+        top: 70%;
+    }
+    #suivant, #suivant2 {
+        position: absolute;
+        top: 88%; left: 84%;
+        width: 25%;
+    }
+    p {
+        font-size: 10px;
+        text-align: start;
+    }
+    .annee_p {
+        font-size: 12px;
+        
+    }
+
 }
    
 /*____________________________________________________________________768 px */  
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 651px) and (max-width: 768px) {
   
-  
+    #start {
+        position: absolute;
+        left: 12%;
+        
+    }
+    #titre, #titre2 {
+        font-size: 25px;
+        
+    }
+    #experience, #experience2 {
+        height: 60%;
+        width: 80%;
+        position: absolute;
+        top: 10%;
+        line-height: 10px;
+       
+    }
+    #content {
+        margin-top: 13%;
+       
+    }
+    #formation, #formation2 {
+        position: absolute;
+        top: 75%; left: 9%;
+        border-radius: 0%;
+        height: 20%;
+        font-size: 10px;
+    }
+    #formation_decal, #titre_decal, #lieu_decal, #annee_decal, #formation_decal2, #titre_decal2, #lieu_decal2, #annee_decal2 {
+        font-size: 14px;
+       position:absolute;
+       left: 0; 
+        
+    }
+    #contenu_lieu, #contenu_titre, #contenu_annee, #contenu_lieu2, #contenu_titre2, #contenu_annee2 {
+        position: absolute;
+        left: 0;
+    }
+    #annee_decal, #annee_decal2 {
+        position: absolute;
+        top: 70%;
+    }
+    #suivant, #suivant2 {
+        position: absolute;
+        top: 88%; left: 84%;
+        width: 25%;
+    }
+    p {
+        font-size: 10px;
+        text-align: start;
+    }
+    .annee_p {
+        font-size: 12px;
+        
+    }
+
+}
     
+/*____________________________________________________________________992 px */  
+@media screen and  (min-width: 769px) and (max-width: 992px) {
+    #start {
+        position: absolute;
+        left: 15%;
+        
+    }
+    #titre, #titre2 {
+        font-size: 25px;
+        
+    }
+    #experience, #experience2 {
+        height: 60%;
+        width: 80%;
+        position: absolute;
+        top: 10%;
+        line-height: 10px;
+       
+    }
+    #content {
+        margin-top: 10%;
+       
+    }
+    #formation, #formation2 {
+        position: absolute;
+        top: 75%; left: 9%;
+        border-radius: 0%;
+        height: 20%;
+        font-size: 10px;
+    }
+    #formation_decal, #titre_decal, #lieu_decal, #annee_decal, #formation_decal2, #titre_decal2, #lieu_decal2, #annee_decal2 {
+        font-size: 14px;
+       position:absolute;
+       left: 0; 
+        
+    }
+    #contenu_lieu, #contenu_titre, #contenu_annee, #contenu_lieu2, #contenu_titre2, #contenu_annee2 {
+        position: absolute;
+        left: 0;
+    }
+    #annee_decal, #annee_decal2 {
+        position: absolute;
+        top: 70%;
+    }
+    #suivant, #suivant2 {
+        position: absolute;
+        top: 88%; left: 84%;
+        width: 25%;
+    }
+    p {
+        font-size: 10px;
+        text-align: start;
+    }
+    .annee_p {
+        font-size: 12px;
+        
+    }
+
 }
 
-
-@media screen and (max-width: 1600px) {
+/*____________________________________________________________________1124 px */  
+@media screen and (min-width: 993px) and (max-width: 1124px) {
+  
+    header > #navbartop > #navtop > #navbarText {
+        margin-left: 25%;
+        z-index: 500;
+       
+    }
+    #start {
+        position: absolute;
+        left: 23%;
+        
+    }
+    #titre, #titre2 {
+        font-size: 25px;
+        
+    }
+    #experience, #experience2 {
+        height: 60%;
+        width: 80%;
+        position: absolute;
+        top: 10%;
+        line-height: 10px;
+       
+    }
+    #content {
+        margin-top: 7%;
+       
+    }
+    #formation, #formation2 {
+        position: absolute;
+        top: 75%; left: 9%;
+        border-radius: 0%;
+        height: 20%;
+        font-size: 10px;
+    }
+    #formation_decal, #titre_decal, #lieu_decal, #annee_decal, #formation_decal2, #titre_decal2, #lieu_decal2, #annee_decal2 {
+        font-size: 14px;
+       position:absolute;
+       left: 0; 
+        
+    }
+    #contenu_lieu, #contenu_titre, #contenu_annee, #contenu_lieu2, #contenu_titre2, #contenu_annee2 {
+        position: absolute;
+        left: 0;
+    }
+    #annee_decal, #annee_decal2 {
+        position: absolute;
+        top: 70%;
+    }
+    #suivant, #suivant2 {
+        position: absolute;
+        top: 88%; left: 84%;
+        width: 25%;
+    }
+    p {
+        font-size: 10px;
+        text-align: start;
+    }
+    .annee_p {
+        font-size: 12px;
+        
+    }
 
  
+
 }
+    
+    
+
+/*____________________________________________________________________1300 px */  
+@media screen and (min-width: 1125px) and  (max-width: 1300px) {
+  
+    header > #navbartop > #navtop > #navbarText {
+        margin-left: 35%;
+        z-index: 500;
+       
+    }
+    #start {
+        position: absolute;
+        left: 23%;
+        
+    }
+    #titre, #titre2 {
+        font-size: 25px;
+        
+    }
+    #experience, #experience2 {
+        height: 60%;
+        width: 80%;
+        position: absolute;
+        top: 10%;
+        line-height: 10px;
+       
+    }
+    #content {
+        margin-top: 7%;
+       
+    }
+    #formation, #formation2 {
+        position: absolute;
+        top: 75%; left: 9%;
+        border-radius: 0%;
+        height: 20%;
+        font-size: 10px;
+    }
+    #formation_decal, #titre_decal, #lieu_decal, #annee_decal, #formation_decal2, #titre_decal2, #lieu_decal2, #annee_decal2 {
+        font-size: 14px;
+       position:absolute;
+       left: 0; 
+        
+    }
+    #contenu_lieu, #contenu_titre, #contenu_annee, #contenu_lieu2, #contenu_titre2, #contenu_annee2 {
+        position: absolute;
+        left: 0;
+    }
+    #annee_decal, #annee_decal2 {
+        position: absolute;
+        top: 70%;
+    }
+    #suivant, #suivant2 {
+        position: absolute;
+        top: 88%; left: 84%;
+        width: 25%;
+    }
+    p {
+        font-size: 10px;
+        text-align: start;
+    }
+    .annee_p {
+        font-size: 12px;
+        
+    }
+
+ 
+
+}
+    
+
+
+
+
+@media screen and (min-width: 1301px) and (max-width: 1600px) {
+
+    #titre, #titre2 {
+        font-size: 25px;
+        
+    }
+    #formation, #formation2 {
+        position: absolute;
+        top: 15%; left: 845px;
+        
+        
+       
+    }
+
+
+    #experience, #experience2 {
+        height: 70%;
+        width: 70%;
+        position: absolute;
+       
+        line-height: 10px;
+       
+    }
+    #content {
+        margin-top: 6%;
+    }
+
+    #suivant, #suivant2 {
+        position: absolute;
+        top: 82.5%; left: 80%;
+        width: 25%;
+    }
+    p {
+        font-size: 14px;
+        text-align: start;
+    }
+    .annee_p {
+        font-size: 18px;
+        
+    }
+}
+
