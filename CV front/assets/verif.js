@@ -1,4 +1,4 @@
-document.getElementById('formulaire du mail').onsubmit = function() 
+document.getElementById('formulaire_du_mail').onsubmit = function() 
 {
    var subjectmail = document.getElementById('subjectmail').value;
    var mail = document.getElementById('mail').value;
