@@ -12,7 +12,7 @@ document.getElementById('formulaire_du_mail').onsubmit = function()
    const regexmail = new RegExp (/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/gm);// regex pour le mail 
     if (subjectmail.length < 1 )
     {
-       tabError[0] = 'Erreur';
+       tabError[0] = 'Erreur';//tableau des erreurs
        
     }
     
