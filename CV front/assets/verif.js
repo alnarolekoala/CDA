@@ -1,15 +1,15 @@
 document.getElementById('formulaire_du_mail').onsubmit = function() 
 {
-   var subjectmail = document.getElementById('subjectmail').value;
-   var mail = document.getElementById('mail').value;
-   var msg = document.getElementById('msg').value;
-   var erreur = document.getElementById('erreur')
-   var erreur2 = document.getElementById('erreur2')
+   var subjectmail = document.getElementById('subjectmail').value;// récupération du sujet 
+   var mail = document.getElementById('mail').value;// récupération de l'adresse mail 
+   var msg = document.getElementById('msg').value;// récupération du contenudu message 
+   var erreur = document.getElementById('erreur') 
+   var erreur2 = document.getElementById('erreur2') // récuperation des div pour message erreur 
    var erreur3 = document.getElementById('erreur3')
     tabError = new Array ();
     var i = 0;
-   const regex1 = new RegExp (/[A-ÿ ]$/gm);
-   const regexmail = new RegExp (/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/gm);
+   const regex1 = new RegExp (/[A-ÿ ]$/gm); // regex générale toutes lettre majuscule, minuscule, lettre avec accent et quelques symbole
+   const regexmail = new RegExp (/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/gm);// regex pour le mail 
     if (subjectmail.length < 1 )
     {
        tabError[0] = 'Erreur';
