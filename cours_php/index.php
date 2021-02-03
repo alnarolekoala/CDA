@@ -33,5 +33,18 @@ Exercice sur les boucles<br><br>
    <li>    <button><a href="Fichier/ExerciceFichier.php">Exercices</a></button> </li><br>
 
    </ul>
+
+
+   <ul> Exercice sur les formulaires<br><br>
+   <li>    <button><a href="formulaire/formulaire.php">Accès formulaire</a></button> </li><br>
+
+   </ul>
+
+
+   
+   <ul> CRUD<br><br>
+   <li>    <button><a href="CRUD/indexCRUD.php">Accès index</a></button> </li><br>
+
+   </ul>
 </body>
 </html>

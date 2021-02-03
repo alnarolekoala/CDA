@@ -1,0 +1,69 @@
+.col-5 {
+    
+    margin-bottom: 2%;
+  
+}
+
+.title, .label, .nom, .annee, .genre {
+    display: block;
+    font-size: 0.8em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+img {
+    float: left
+}
+
+
+.nom {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.title {
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.btn {
+
+    font-size: 0.75em;
+}
+
+#details {
+    position: absolute;
+    bottom: 0%; left: 50%;
+}
+
+
+
+.infoList {
+    margin-bottom: 5%;
+    font-size: 3em;
+}
+
+.fixed_bot {
+    position: fixed;
+    top: 0%; left: 0%;
+    font-weight: bold;
+    font-size: 1em;
+    color: red;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #details {
+        position: absolute;
+        bottom: 0%; left: 65%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #details {
+        position: absolute;
+        bottom: 0%; left: 65%;
+    }
+}
