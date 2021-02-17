@@ -12,10 +12,10 @@
 <?php 
 $disc_id = $_GET['disc_id']; 
     require "../BDD/connexion_BDD.php";
-    $requete = "SELECT * FROM disc JOIN artist ON disc.artist_id = artist.artist_id WHERE disc_id=".$disc_id;
-    $result = $db->query($requete);
-    $row = $result->fetch(PDO::FETCH_OBJ);
-
+    $requete = $db->prepare("SELECT * FROM disc JOIN artist ON disc.artist_id = artist.artist_id WHERE disc_id=".$disc_id);
+    $requete->execute();
+    $row = $requete->fetch(PDO::FETCH_OBJ);
+  
     ?>
     <h1 class="offset-2 col-10">Details</h1>
 
@@ -54,13 +54,11 @@ $disc_id = $_GET['disc_id'];
                 <label for="picture">Picture</label>
                 <img class="img-responsive" src="../image/<?= $row->disc_picture?>" title="<?= $row->disc_title?>" width="400">
             </div>
-          
-            </div>
             <div> 
             <a href="update_form.php?disc_id=<?= $row->disc_id?>"><button type="button" id="ajoute" class="btn btn-primary">Modifier</button></a>
             <a href="delete_form.php?disc_id=<?= $row->disc_id?>"><button type="button" id="back" class="btn btn-primary">Supprimer</button></a>
             <a href="indexCRUD.php"><button type="button" id="back" class="btn btn-primary">Retour</button></a>
-          
+            </div>
         </div>
     </form>
 </div>

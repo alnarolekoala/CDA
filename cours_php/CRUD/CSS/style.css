@@ -1,6 +1,6 @@
 .col-5 {
     
-    margin-bottom: 2%;
+    margin-top: 2%;
   
 }
 
@@ -8,6 +8,10 @@
     display: block;
     font-size: 0.8em;
 }
+.marginBot {
+    margin-bottom: 1%;
+}
+
 
 .bold {
     font-weight: bold;
@@ -66,4 +70,19 @@ img {
         position: absolute;
         bottom: 0%; left: 65%;
     }
+}
+
+
+@media screen and (max-width: 550px) {
+    #details {
+        position: absolute;
+        bottom: 0%; left: 85%;
+    }
+}
+
+.erreurs {
+    color: red;
+    font-size: 12px;
+    
+    
 }

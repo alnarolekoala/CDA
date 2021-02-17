@@ -61,7 +61,7 @@ else {
 
 
 echo "<br><br><strong>Exercice 5</strong> : Affichez l'heure courante sous cette forme : 11h25.<br><br>";
-
+date_default_timezone_set('Europe/Paris');
 $oDate3 = new DateTime();
 echo "l'heure actuelle est : ";
 echo $oDate3->format("H");

@@ -30,7 +30,7 @@ $nbLigne = $result->rowCount();
 $requete = $db->query("SELECT * FROM disc JOIN artist ON disc.artist_id = artist.artist_id");
 while ($ligne = $requete->fetch(PDO::FETCH_OBJ)) 
 {?>
-   <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+   <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 marginBot">
 <img class="img-responsive" src="../image/<?= $ligne->disc_picture?>" title="<?= $ligne->disc_title?>" width="200">
 <span class="title"><?= $ligne->disc_title?></span>
 <span class="nom"><?= $ligne->artist_name?></span>
