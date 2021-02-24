@@ -99,10 +99,14 @@ if(empty($taberror))
 
         require "../BDD/connexion_BDD.php";
 
-        $artist_id = $db->prepare("SELECT artist_id FROM artist WHERE artist_name=".$artist);
-
+        
 try{ 
 
+
+        
+        $requete = $db->prepare("SELECT artist_id FROM artist WHERE artist_name=:artist_name");
+        $result = $requete->bindValue(':artist_name', $artist, PDO::PARAM_STR);
+        
 
         $requete = $db->prepare("INSERT INTO disc (disc_title, disc_year, disc_genre, disc_label, disc_price, disc_picture, artist_id) 
         VALUES (:title, :annee, :genre, :label , :price , :picture, :artist_id)");
@@ -113,7 +117,7 @@ try{
         $requete->bindValue(':label', $label, PDO::PARAM_STR);
         $requete->bindValue(':price', $price, PDO::PARAM_STR);
         $requete->bindValue(':picture', $picture, PDO::PARAM_STR);
-        $requete->bindValue(':artist_id', $artist_id, PDO::PARAM_INT);
+        $requete->bindValue(':artist_id', $result, PDO::PARAM_INT);
               
         $requete->execute();
         
@@ -132,10 +136,10 @@ try{
          
        
           
-      
+    
         $disc_picture = $_FILES['picture']['name'];
       
-        move_uploaded_file($_FILES["picture"]["tmp_name"], "../image/$disc_picture");
+        move_uploaded_file($_FILES['picture']['tmp_name'], '../image/'.$disc_picture);
        
         header("Location: indexCRUD.php");
 exit;

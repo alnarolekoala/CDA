@@ -20,7 +20,7 @@ function check (){
     // si le champ est vide
     if(discTitle.value == "")
     {
-        alert('yo');
+        
         valeurErreur0 = document.getElementById("MsgErreur0");
         valeurErreur0.innerHTML = "* Remplir le champ 'Title' svp"
         return false;
