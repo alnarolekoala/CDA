@@ -46,5 +46,11 @@ Exercice sur les boucles<br><br>
    <li>    <button><a href="CRUD/indexCRUD.php">Accès index</a></button> </li><br>
 
    </ul>
+
+   <ul> CRUD<br><br>
+   <li>    <button><a href="Session\login_form.php">Exo session</a></button> </li><br>
+
+   </ul>
+   
 </body>
 </html>
