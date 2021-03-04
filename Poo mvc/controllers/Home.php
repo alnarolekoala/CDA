@@ -1,7 +1,12 @@
 <?php
 
 
-class Home
+class Home extends AbstractController
 {
-
+    public function __construct()
+    {
+    }
+    public function homePage() {
+        $this->render('index');
+    }
 }

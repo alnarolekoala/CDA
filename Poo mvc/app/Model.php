@@ -14,7 +14,7 @@ abstract class Model
 //propriété contenant les information de requêtes
 
     public string $table;
-    public string $id;
+    public int $id;
 
     /**
      * connexion à la base de données
