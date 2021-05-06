@@ -7,9 +7,11 @@
     </div>
     <?php
     if(isset($_POST['submit'])) {
-        var_dump($_POST);
+        var_dump($_POST['picture']);
     }
-    var_dump($disc->id);
+    var_dump(__DIR__);
+    var_dump($_POST['picture']);
+    var_dump($_FILES['picture']['name']);
     if (!empty($success)) {
         ?>
         <div class="row">
@@ -73,6 +75,11 @@
                     </select>
                     <span class="error"><?= isset($error['artist']) ? $error['artist'] : '' ?></span>
                 </div>
+        <div class="mb-3">
+            <label for="picture"class="form-label">Picture :</label>
+            <input type="file" class="form-control-file" name="picture" id="picture">
+            <span class="error"><?= isset($error['picture']) ? $error['picture'] : '' ?></span>
+        </div>
                 <button type="submit" class="btn btn-primary" name="update" value="update">Modifier</button>
             </form>
         </div>

@@ -1,10 +1,12 @@
 <div class="container">
     <div class="row mt-5">
         <div class="col-sm-12">
-            <h1>Modification</h1>
+            <h1>Ajout</h1>
         </div>
     </div>
+
     <?php
+    var_dump(__DIR__);
     if (!empty($success)) {
         ?>
         <div class="row">
@@ -68,6 +70,11 @@
                         ?>
                     </select>
                     <span class="error"><?= isset($error['artist']) ?  '* ' .$error['artist'] : '' ?></span>
+                </div>
+                <div class="mb-3">
+                    <label for="picture"class="form-label">Picture :</label>
+                    <input type="file" class="form-control-file" name="picture" id="picture">
+                    <span class="error"><?= isset($error['picture']) ? $error['picture'] : '' ?></span>
                 </div>
                 <button type="submit" class="btn btn-primary" name="add" value="add">Ajouter</button>
             </form>
